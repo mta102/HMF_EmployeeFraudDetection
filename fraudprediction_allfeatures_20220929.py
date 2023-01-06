@@ -52,17 +52,17 @@ from skopt.space import Real, Categorical, Integer
 pr.connect_to_redshift(
      host='hanadatawarehouse.clv1kgputklq.ap-southeast-1.redshift.amazonaws.com',
      dbname ='hanadb',
-     user='ext_rw_user_1',
-     password='bA55-f2$8'
+     user='xxx',
+     password='xxx'
   )
 
-finflux_connection = 'mysql://hanareadonly:H%40nare%40d2021@hanareaddb.finflux.io:9423/hana-production'
+finflux_connection = 'mysql://xxx:xxx@hanareaddb.finflux.io:9423/hana-production'
 
-db_connection_str = 'mysql://kebwebuser:u5erMeb%40pp@hana-production-analytics-read-replica.c0wcwq0ocdj3.ap-southeast-1.rds.amazonaws.com/kebhana_dashboard_db'
+db_connection_str = 'mysql://xxx:xxx@hana-production-analytics-read-replica.c0wcwq0ocdj3.ap-southeast-1.rds.amazonaws.com/kebhana_dashboard_db'
 
-xuname="tableausrv@hanamicrofinance.com"
+xuname="xxx@hanamicrofinance.com"
 xuname = urllib.parse.quote_plus(xuname)
-db_conn_str = 'mysql://' + xuname + ':QrU7w8DxfmbwQpd7@hana-innovation-reader.c4yqwynpry4t.ap-southeast-2.rds.amazonaws.com/hana'
+db_conn_str = 'mysql://' + xuname + ':xxx@hana-innovation-reader.c4yqwynpry4t.ap-southeast-2.rds.amazonaws.com/hana'
 
 default_date = dt.datetime(1099, 1, 1)
 current_date = dt.datetime.now().strftime("%Y-%m-%d %H:%M")
